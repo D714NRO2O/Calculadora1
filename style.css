@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+.history {
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 0.8em;
+    padding: 10px;
+    height: 60px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+button {
+    background-color: #eee;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #ddd;
+}
+
+button:nth-child(4n) {
+    background-color: rgb(24, 84, 248);
+    color: #fff;
+}
+
+button:nth-child(4n):active {
+    background-color: #e80;
+}
+
+button:nth-last-child(2) {
+    background-color: #444;
+    color: #fff;
+}
+
+button:nth-last-child(2):active {
+    background-color: #333;
+}
+
+button:nth-last-child(1) {
+    background-color: rgb(24, 84, 248);
+    color: #fff;
+}
+
+button:nth-last-child(1):active {
+    background-color: #e80;
+}
